@@ -1,19 +1,19 @@
 import React from 'react';
 import './CustomSwitch.css'
-const CustomSwitch = ({ label }) => {
+const CustomSwitch = ({ id, outline }) => {
   return (
     <div className="container">
-      
       <div className="toggle-switch">
         <input type="checkbox" className="checkbox"
-          name={label} id={label} />
-        <label className="label" htmlFor={label}>
+          name={id} id={id} />
+        <label className="label" htmlFor={id}>
           <span className="inner" />
-          <span className="switch" />
+          <span className={outline ? 'switch outline' : 'switch'} />
         </label>
       </div>
     </div>
   );
+
 };
 
 export default CustomSwitch;
