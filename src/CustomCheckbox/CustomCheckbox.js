@@ -1,9 +1,9 @@
 import React from 'react';
 import './CustomCheckbox.css'
-const CustomCheckbox = ({ id, label }) => {
+const CustomCheckbox = ({ id, label, outline }) => {
     return (
         <label className='custom-checkbox' >
-            <input  type="checkbox" name={id} id={id} />
+            <input className={`checkbox ${outline && 'border'}`}  type="checkbox" name={id} id={id} />
             {label}
         </label>
    

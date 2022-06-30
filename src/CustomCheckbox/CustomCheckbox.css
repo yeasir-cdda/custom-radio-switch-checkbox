@@ -7,7 +7,7 @@
   align-items: center;
   
 }
-input {
+.checkbox {
   appearance: none;
   margin: 0;
   font: inherit;
@@ -19,7 +19,7 @@ input {
   place-content: center;
 }
 
-input::before {
+.checkbox::before {
   content: "";
   width: 8px;
   height: 7px;
@@ -29,14 +29,14 @@ input::before {
   background-color: #4D9FFF;
 }
 
-input:checked::before {
+.checkbox:checked::before {
   transform: scale(1);
 }
 
-input:focus {
+.border {
   outline: 2px solid #444444;
 }
 
-input:disabled {
+.checkbox:disabled {
   cursor: not-allowed;
 }

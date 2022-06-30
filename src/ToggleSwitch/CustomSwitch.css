@@ -6,7 +6,7 @@
   width: 40px;
   display: inline-block;
 }
-.checkbox {
+.switch-checkbox {
   display: none;
 }
 .label {
@@ -70,18 +70,18 @@
   width: 10px;
   height: 10px;
 }
-.checkbox:checked + .label .inner {
+.switch-checkbox:checked + .label .inner {
   margin-left: 0;
 }
-.checkbox:checked + .label .switch {
+.switch-checkbox:checked + .label .switch {
   right: 12px;
   background-color: #4d9fff;
   border-color: #f9f9f9;
 }
-.checkbox:checked + .label .dark_inner {
+.switch-checkbox:checked + .label .dark_inner {
   margin-left: 0;
 }
-.checkbox:checked + .label .dark_switch {
+.switch-checkbox:checked + .label .dark_switch {
   right: 12px;
   background-color: #15457d;
   border-color: #f9f9f9;

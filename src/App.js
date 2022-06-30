@@ -12,7 +12,8 @@ function App() {
      <CustomSwitch dark outline id='darko'/>
      
      <h2 style={{textAlign:'center'}}>Checkbox</h2>
-     <CustomCheckbox label='hello' id = 'check'/>
+     <CustomCheckbox  label='hello' id = 'check'/>
+     <CustomCheckbox outline label='hi' id = 'check'/>
     </div>
   );
 }
