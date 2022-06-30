@@ -4,6 +4,8 @@ function App() {
     <div className="">
      <CustomSwitch id='subscribe'/>
      <CustomSwitch outline id='outline'/>
+     <CustomSwitch dark id='darks'/>
+     <CustomSwitch dark outline id='darko'/>
     </div>
   );
 }

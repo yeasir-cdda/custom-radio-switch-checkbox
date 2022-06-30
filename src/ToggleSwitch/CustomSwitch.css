@@ -18,6 +18,7 @@
   background: #cccccc;
   border-radius: 5px;
 }
+
 .inner {
   display: block;
   width: 200%;
@@ -29,7 +30,6 @@
   float: left;
   width: 50%;
   height: 36px;
-
   box-sizing: border-box;
 }
 .inner:before {
@@ -42,6 +42,13 @@
   padding-right: 10px;
   background-color: #bbb;
 }
+
+.dark_inner:after {
+  background-color: #444444;
+}
+.dark_inner:before {
+  background-color: #444444;
+}
 .switch {
   display: block;
   width: 14px;
@@ -53,8 +60,10 @@
   top: -2px;
   bottom: 0;
   right: 30px;
-
   transition: all 0.3s ease-in 0s;
+}
+.dark_switch {
+  background: #cccccc;
 }
 .outline {
   border: 2px solid #4d9fff;
@@ -67,6 +76,13 @@
 .checkbox:checked + .label .switch {
   right: 12px;
   background-color: #4d9fff;
-  border-color: #F9F9F9;
+  border-color: #f9f9f9;
 }
-
+.checkbox:checked + .label .dark_inner {
+  margin-left: 0;
+}
+.checkbox:checked + .label .dark_switch {
+  right: 12px;
+  background-color: #15457d;
+  border-color: #f9f9f9;
+}
