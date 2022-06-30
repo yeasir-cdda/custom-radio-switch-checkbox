@@ -1,0 +1,42 @@
+.custom-checkbox {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: inline-grid;
+  grid-template-columns: .7em auto;
+  align-items: center;
+  
+}
+input {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #4D9FFF;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+}
+
+input::before {
+  content: "";
+  width: 8px;
+  height: 7px;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transition: 120ms transform ease-out;
+  background-color: #4D9FFF;
+}
+
+input:checked::before {
+  transform: scale(1);
+}
+
+input:focus {
+  outline: 2px solid #444444;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
