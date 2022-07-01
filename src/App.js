@@ -1,5 +1,6 @@
 import  CustomSwitch  from "./ToggleSwitch/CustomSwitch";
 import CustomCheckbox from "./CustomCheckbox/CustomCheckbox";
+import CustomRadioBtn from "./CustomRadioBtn/CustomRadioBtn";
 function App() {
   return (
     <div className="">
@@ -17,6 +18,8 @@ function App() {
      <CustomCheckbox outline  id = 'check'/>
      
      <CustomCheckbox dark />
+     <br/>
+     <CustomRadioBtn id={'id'}/>
     </div>
   );
 }
