@@ -19,7 +19,8 @@ function App() {
      
      <CustomCheckbox dark />
      <br/>
-     <CustomRadioBtn id={'id'}/>
+     <CustomRadioBtn  id={'id'}/>
+     <CustomRadioBtn  id={'id'}/>
     </div>
   );
 }
